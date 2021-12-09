@@ -1,73 +1,50 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Game Expose">
-        <meta name="author" content="James Kittler">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Game Expose">
+    <meta name="author" content="James Kittler">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
-
-        <style>
-            *{
-               overflow-x: hidden;
-               margin: 0px;
-               font-size: 16px;
-            }
-
-            #frontPage{
-                height: 100vh;
-            }
-
-            #header{
-                background-color: goldenrod;
-                width: 100vw;
-                height: 10%;
-            }
-
-            #headerContent{
-                width: 100vw;
-                height: 100%;
-            }
-
-            #headerContent > h1{
-                position: relative;
-                font-family: 'Londrina Outline', cursive;
-                font-size: 4vw;
-                left: 1%;
-                padding-right: 20vw;
-            }
-
-            #headerLinks{
-                position: absolute;
-                right: 0px;
-                top: 0px;
-            }
-
-            #headerLinks > a{
-                display: flex;
-                font-family: 'Londrina Outline', cursive;
-                font-size: 4vw;
-                float: left;
-                padding-right: 4vw;
-            }
-
-        </style>
-    </head>
-    <body>
-        <div id = "frontPage">
-            <div id = "header">
-                <div id = "headerContent">
-                    <h1>Jay Kittler</h1>
-                    <div id = "headerLinks">
-                        <a>Family & Friends</a>
-                        <a>Projects</a>
-                        <a>Page3</a>
-                    </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id = "gameTest">
+        <div id = "player"><img src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/3cb4caf82e372fd.png"></div>
+    </div>
+    <div id = "frontPage">
+        <div id = "header">
+            <div id = "headerContent">
+                <h1>Jay Kittler</h1>
+                <div id = "headerLinks">
+                    <a>Family & Friends</a>
+                    <a>Projects</a>
+                    <a>Page3</a>
                 </div>
             </div>
-            <div id = "heroImage"></div>
         </div>
-    </body>
+        <div id = "frontPageContent" style="top: 100px;">
+            <div id = "row">
+            <div class = "column">
+                <img src="Images/fullGroup.JPG" alt = "full group">
+                <img src="Images/flex.JPG" alt = "flex">
+            </div>
+            <div class = "column">
+                <img src = "Images/groupLax.jpg" alt = "laxGroup">
+                <img src = "Images/tourney.JPG" alt = "Tourney">
+            </div>
+            <div class = "column">
+                <img src="Images/soloLax.jpg" alt = "soloLax">
+
+            </div>
+            <div class = "column">
+                <img src = "Images/ceej.JPG" alt = "Cj Blazer">
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src = 'game.js'></script>
+</body>
 </html>
